@@ -1,0 +1,13 @@
+# User added directories (if any)
+
+# Build artifacts
+build/
+*.o
+*.exe
+*.swp
+app
+
+# Editor/IDE
+.vscode/
+.idea/
+.DS_Store

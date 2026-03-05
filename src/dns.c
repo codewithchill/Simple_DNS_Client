@@ -149,6 +149,8 @@ void dns_query(char *website) {
     uint8_t *buffer = getData( query_packet, query_len, &buf_len);
 
     printf("\n%sResponse recieved: %s", FG_CYAN, RESET);
+    if (!buffer) exit(EXIT_FAILURE);
+
     for (int i = 0; i < buf_len; i++)
         printf("%02X", buffer[i]);
 

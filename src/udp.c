@@ -62,7 +62,7 @@ connection_details_t get_udp_server_socket(const char* ip) {
     return data;
 }
 
-uint8_t* getData(const uint8_t* message, const uint8_t length, int *buf_len) {
+uint8_t* getData(const uint8_t* message, const size_t length, int *buf_len) {
 
     uint8_t  ip_id = get_Random_Id();
     const char *ip = ipBuffer[ip_id];

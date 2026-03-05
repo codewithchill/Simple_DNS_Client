@@ -1,3 +1,9 @@
 1. Take input with much more precaution
 2. Add robustness for malloc calls
 3. Add web url checks
+4. Always make sure to check null values.
+5. Check for outbound reads.
+6. Remove hard-coded magic numbers.
+7. Create an enum for error messages and try to return those.
+8. Add more parse functionalities of other types.
+

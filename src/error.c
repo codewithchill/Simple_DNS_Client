@@ -1,5 +1,6 @@
-#include "error.h"
+#include <error.h>
 
+// clang-format off
 const char* dns_strerror(dns_status_t status) {
     switch (status) {
         case DNS_SUCCESS:              return "Success";
@@ -17,3 +18,4 @@ const char* dns_strerror(dns_status_t status) {
         default:                       return "Unknown error";
     }
 }
+// clang-format on

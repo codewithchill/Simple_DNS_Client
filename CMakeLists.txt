@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.10)
 project("DNS Client" C)
 
 # Set C Flags
-set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -Wall -Wextra")
 
 # Include directories (header files)

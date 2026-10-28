@@ -19,4 +19,3 @@
 #define BG_PURPLE  "\e[45m"
 #define BG_CYAN    "\e[46m"
 #define BG_WHITE   "\e[47m"
-

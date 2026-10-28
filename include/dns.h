@@ -1,7 +1,6 @@
 #pragma once
 
 #include <stdint.h>
-#include <stdio.h>
 
 #define RD (1 << 8)
 
@@ -101,7 +100,6 @@ typedef struct {
     const char *name;
 } DNS_TypeName;
 
-const char *dns_type_to_string(uint16_t dns_type);
 
 typedef enum {
     CLASS_IN = 1, /* Internet */
@@ -113,7 +111,6 @@ typedef enum {
     QCLASS_ANY = 255 /* Any class */
 } DNS_Class;
 
-const char *dns_class_to_string(uint16_t dns_class);
 
 #define DNS_POINTER_MASK 0xC000
 #define DNS_POINTER_VALUE 0xC000
@@ -150,5 +147,7 @@ typedef struct __attribute__((packed)) {
     uint16_t q_rd_len;
 } resourse_rec_no_name_rdata_t;
 
+const char *dns_type_to_string(uint16_t dns_type);
+const char *dns_class_to_string(uint16_t dns_class);
 void parse_arguments(int argc, char **argv);
 void dns_query(char *website);

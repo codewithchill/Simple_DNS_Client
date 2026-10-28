@@ -1,4 +1,6 @@
-#include "dns.h"
+#include <dns.h>
+
+#include <stdio.h>
 
 static const DNS_TypeName dns_type_table[] = {{TYPE_A, "A"},
                                               {TYPE_NS, "NS"},
@@ -90,7 +92,6 @@ const char *dns_type_to_string(uint16_t dns_type) {
             return dns_type_table[i].name;
     return "UNKNOWN";
 }
-
 const char *dns_class_to_string(uint16_t dns_class) {
     switch (dns_class) {
     case 1:
